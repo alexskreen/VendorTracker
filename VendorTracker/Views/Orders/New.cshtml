@@ -6,7 +6,13 @@
 
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-  <label for="orderDetails">Order Details</label>
+  <label for="orderDetails">Item(s):</label>
   <input id="orderDetails" name="orderDetails" type="text">
+  <label for="orderDate">Delivery date requested:</label>
+  <input id="orderDate" name="orderDate" type="date">
+  <label for="orderAddress">Shipping address:</label>
+  <input id="orderAddress" name="orderAddress" type="text">
+  <label for="orderPayment">Preferred payment method:</label>
+  <input id="orderPayment" name="orderPayment" type="text">
   <button type='submit'>Submit order</button>
 </form>

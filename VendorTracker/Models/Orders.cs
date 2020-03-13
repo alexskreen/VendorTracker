@@ -6,13 +6,20 @@ namespace VendorTracker.Models
   {
     public string Details { get; set; }
     public int Id { get; }
+    public string Date { get; set; }
+    public string Address { get; set; }
+    public string Payment { get; set; }
+
     private static List<Order> _instances = new List<Order> { };
 
-    public Order(string details)
+    public Order(string details, string date, string address, string payment)
     {
       Details = details;
       _instances.Add(this);
       Id = _instances.Count;
+      Date = date;
+      Address = address;
+      Payment = payment;
     }
 
     public static List<Order> GetAll()
