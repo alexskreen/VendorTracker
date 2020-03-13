@@ -3,7 +3,7 @@
 <h3>Here is the order history for this Vendor:</h3>
 
 <ol>
-@foreach (Vendor vendor in @Model["vendors"])
+@foreach (Order order in @Model["orders"])
 {
   <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Details</a></li>
 }
