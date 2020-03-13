@@ -29,6 +29,5 @@ namespace VendorTracker.Models
     {
       return _instances[searchId - 1];
     }
-
   }
 }
